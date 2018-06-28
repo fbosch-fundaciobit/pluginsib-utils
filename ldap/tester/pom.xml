@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.fundaciobit.ldap</groupId>
+  <version>1.0</version>
+  <artifactId>testerldapapp-run</artifactId>
+  <packaging>pom</packaging>
+
+  <name>FundacioBit Tester LDAP App - Run</name>
+
+  <modules>	
+  </modules>
+
+  <properties>
+
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>github-governib-maven-repos</id>
+      <name>GitHub GovernIB Maven Repository</name>
+      <url>http://GovernIB.github.io/maven/maven/</url>
+    </repository>
+  </repositories>
+
+
+
+  <dependencies>
+
+    <!--  CORE -->
+    <dependency>
+      <groupId>org.fundaciobit.plugins</groupId>
+      <artifactId>plugins-utils-ldap</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.14</version>
+    </dependency>
+
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
+        <executions>
+          <execution>
+            <id>purge-local-dependencies</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>purge-local-repository</goal>
+            </goals>
+            <configuration>
+              <includes>
+                <include>org.fundaciobit.plugins:plugins-utils-ldap</include>
+              </includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
