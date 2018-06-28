@@ -1,52 +1,44 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.fundaciobit.plugins</groupId>
+  <groupId>org.fundaciobit.pluginsib.utils</groupId>
   <artifactId>plugins-utils-discoverplugins</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
-
-  <name>FundacioBit Plugins - Utils - DiscoverPlugins</name>
-
+  <version>2.0.0</version>
+  <name>PluginsIB-Utils-DiscoverPlugins</name>
   <parent>
     <groupId>org.fundaciobit.pluginsib.utils</groupId>
     <version>2.0.0</version>
     <artifactId>pluginsib-utils</artifactId>
   </parent>
-
   <url>http://maven.apache.org</url>
-
-  	<build>
-      <pluginManagement>
-        <plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-	    </plugins>
-	  </pluginManagement>
-    </build>
-
-    <dependencies>
-
-		<dependency>
-		  <groupId>org.fundaciobit.plugins</groupId>
-		  <artifactId>plugins-api</artifactId>
-		  <version>1.0.0</version>
-		  <scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.reflections</groupId>
-			<artifactId>reflections</artifactId>
-			<version>0.9.9-RC2-PluginsIB</version>
-	        <scope>provided</scope>
-		</dependency>
-
-     </dependencies>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.fundaciobit.plugins</groupId>
+      <artifactId>plugins-api</artifactId>
+      <version>1.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>0.9.9-RC2-PluginsIB</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 </project>
