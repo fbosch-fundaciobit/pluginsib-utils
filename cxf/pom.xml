@@ -8,11 +8,11 @@
   <name>FundacioBit Plugins - Utils - CXF</name>
 
   <parent>
-    <groupId>org.fundaciobit.plugins</groupId>
-    <version>1.0.0</version>
-    <artifactId>plugins-utils</artifactId>
+    <groupId>org.fundaciobit.pluginsib.utils</groupId>
+    <version>2.0.0</version>
+    <artifactId>pluginsib-utils</artifactId>
   </parent>
-  
+
     <properties>
     <cxf.version>2.2.12</cxf.version>
   </properties>
@@ -74,7 +74,7 @@
       <version>${cxf.version}</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!--
     <dependency>
       <groupId>commons-fileupload</groupId>
