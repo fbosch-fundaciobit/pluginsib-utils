@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.fundaciobit.pluginsib.utils</groupId>
-  <artifactId>plugins-utils-discoverplugins</artifactId>
+  <artifactId>pluginsib-utils-discoverplugins</artifactId>
   <packaging>jar</packaging>
   <version>2.0.0</version>
-  <name>PluginsIB-Utils-DiscoverPlugins</name>
+  <name>PluginsIB - Utils - DiscoverPlugins</name>
   <parent>
     <groupId>org.fundaciobit.pluginsib.utils</groupId>
     <version>2.0.0</version>
@@ -28,12 +28,12 @@
     </pluginManagement>
   </build>
   <dependencies>
-    <dependency>
+    <!--<dependency>
       <groupId>org.fundaciobit.plugins</groupId>
       <artifactId>plugins-api</artifactId>
       <version>1.0.0</version>
       <scope>provided</scope>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.reflections</groupId>
       <artifactId>reflections</artifactId>
