@@ -28,12 +28,6 @@
     </pluginManagement>
   </build>
   <dependencies>
-    <!--<dependency>
-      <groupId>org.fundaciobit.plugins</groupId>
-      <artifactId>plugins-api</artifactId>
-      <version>1.0.0</version>
-      <scope>provided</scope>
-    </dependency>-->
     <dependency>
       <groupId>org.reflections</groupId>
       <artifactId>reflections</artifactId>
